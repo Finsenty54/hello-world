@@ -1,0 +1,14 @@
+from __future__ import print_function
+def change():
+	a=int(raw_input())
+	n=[]
+	for i in range(106):
+		n.append(a%8)
+		a=a/8
+		if (a==0):
+			break
+	n.reverse()
+	for i in n:
+		print (i,end='')
+		
+change()
